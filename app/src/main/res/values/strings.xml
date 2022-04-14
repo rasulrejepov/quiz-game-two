@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application00002.002.001</string>
+    <string name="question">Question</string>
+    <string name="randomGame">o\'zingizga maqul o\'yinni tanlang</string>
+    <string name="math_games">Math game</string>
+    <string name="flags_game">Flags game</string>
+    <string name="country_game">Country game</string>
+    <string name="ansver_one">Answer one</string>
+    <string name="answer_two">Answer two</string>
+    <string name="answer_three">Answer three</string>
+    <string name="answer_four">Answer four</string>
+    <string name="next">Next</string>
+</resources>

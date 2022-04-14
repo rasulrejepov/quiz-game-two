@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_uchun_picture_3"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_info_24"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/teal_700"
+            android:layout_weight="30"
+            android:text="@string/randomGame"
+            android:textColor="@color/MylikeColor"/>
+
+        <ImageView
+            android:id="@+id/woow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_settings_24"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="350dp"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       app:cardCornerRadius="80dp"
+       android:layout_marginTop="10dp"
+       android:id="@+id/myCardViewNextActivity1"
+       android:backgroundTint="@color/red">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <ImageView
+               android:id="@+id/MyImageViewNextActivity1"
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               android:src="@drawable/crazy_math_game"/>
+           <com.google.android.material.button.MaterialButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:text="@string/math_games"
+               android:id="@+id/myButtnIdNextActivity1"
+               app:cornerRadius="30dp"/>
+
+
+       </LinearLayout>
+
+
+   </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardViewNextActivity2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="80dp"
+        android:backgroundTint="@color/red">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/MyImageViewNextActivity2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/crazy_flags_games"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/myButtnIdNextActivity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/flags_game"
+                app:cornerRadius="30dp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardViewNextActivity3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="80dp"
+        android:backgroundTint="@color/red">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/MyImageViewNextActivity3"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/crazy_county_games"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/myButtnIdNextActivity3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/country_game"
+                app:cornerRadius="30dp"/>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
