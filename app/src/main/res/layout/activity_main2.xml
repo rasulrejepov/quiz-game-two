@@ -1,9 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    android:background="@drawable/background_uchun_picture_3"
+    android:gravity="center_horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_margin="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_uchun_picture_3"/>
+
+    <TextView
+        android:id="@+id/tv_question_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:text="@string/question" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_variant"
+        android:text="@string/question"
+        android:layout_marginBottom="24dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_variant"
+        android:text="@string/question"
+        android:layout_marginBottom="24dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_variant"
+        android:text="@string/question"
+        android:layout_marginBottom="24dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_variant"
+        android:text="@string/question"/>
+
+</LinearLayout>

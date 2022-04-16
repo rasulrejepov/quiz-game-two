@@ -2,72 +2,92 @@ package com.example.myapplication00002002001
 
 import android.content.Intent
 import android.R.xml
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.inputmethod.InputBinding
 import android.widget.Button
 import android.widget.ImageView
 import androidx.cardview.widget.CardView
+import com.example.myapplication00002002001.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var button: Button
-    private lateinit var binding: MainActivity
-    private lateinit var cardView:CardView
-    private lateinit var imageView: ImageView
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        button = findViewById(R.id.myButtnIdNextActivity1)
-        cardView = findViewById(R.id.myCardViewNextActivity1)
-        imageView = findViewById(R.id.MyImageViewNextActivity1)
-     //   binding = InputBinding(savedInstanceState)
-        cardView.setOnClickListener {
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.myCardViewNextActivity1.setOnClickListener {
             val intent = Intent(this, QuizTestMain::class.java)
+            intent.putExtra("image_view_visibility",false)
+            intent.putExtra("text_view_visibility",true)
+            intent.putExtra("quiz_number",1)
             startActivity(intent)
         }
-        button.setOnClickListener {
+        binding.myButtnIdNextActivity1.setOnClickListener {
 
             val intent = Intent(this, QuizTestMain ::class.java)
+            intent.putExtra("image_view_visibility",false)
+            intent.putExtra("text_view_visibility",true)
+            intent.putExtra("quiz_number",1)
             startActivity(intent)
         }
-        imageView.setOnClickListener {
+        binding.MyImageViewNextActivity1.setOnClickListener {
             val intent = Intent(this, QuizTestMain::class.java)
+            intent.putExtra("image_view_visibility",false)
+            intent.putExtra("text_view_visibility",true)
+            intent.putExtra("quiz_number",1)
             startActivity(intent)
         }
-        button = findViewById(R.id.myButtnIdNextActivity2)
-        cardView = findViewById(R.id.myCardViewNextActivity2)
-        imageView = findViewById(R.id.MyImageViewNextActivity2)
-        //   binding = InputBinding(savedInstanceState)
-        cardView.setOnClickListener {
+        binding.myCardViewNextActivity2.setOnClickListener {
             val intent = Intent(this, QuizTestMain::class.java)
+                intent.putExtra("image_view_visibility",true)
+                intent.putExtra("text_view_visibility",false)
+                intent.putExtra("quiz_number",2)
             startActivity(intent)
         }
-        button.setOnClickListener {
+        binding.myButtnIdNextActivity2.setOnClickListener {
 
             val intent = Intent(this, QuizTestMain ::class.java)
+            intent.putExtra("image_view_visibility",true)
+            intent.putExtra("text_view_visibility",false)
+            intent.putExtra("quiz_number",2)
             startActivity(intent)
         }
-        imageView.setOnClickListener {
+        binding.MyImageViewNextActivity2.setOnClickListener {
             val intent = Intent(this, QuizTestMain::class.java)
+            intent.putExtra("image_view_visibility",true)
+            intent.putExtra("text_view_visibility",false)
+            intent.putExtra("quiz_number",2)
             startActivity(intent)
         }
-        button = findViewById(R.id.myButtnIdNextActivity3)
-        cardView = findViewById(R.id.myCardViewNextActivity3)
-        imageView = findViewById(R.id.MyImageViewNextActivity3)
-        //   binding = InputBinding(savedInstanceState)
-        cardView.setOnClickListener {
+        binding.myCardViewNextActivity3.setOnClickListener {
             val intent = Intent(this, QuizTestMain::class.java)
+                intent.putExtra("image_view_visibility",false)
+                intent.putExtra("text_view_visibility",true)
+                intent.putExtra("quiz_number",3)
             startActivity(intent)
         }
-        button.setOnClickListener {
+        binding.myButtnIdNextActivity3.setOnClickListener {
 
             val intent = Intent(this, QuizTestMain ::class.java)
+            intent.putExtra("image_view_visibility",false)
+            intent.putExtra("text_view_visibility",true)
+            intent.putExtra("quiz_number",3)
             startActivity(intent)
         }
-        imageView.setOnClickListener {
+        binding.MyImageViewNextActivity3.setOnClickListener {
             val intent = Intent(this, QuizTestMain::class.java)
+            intent.putExtra("image_view_visibility",false)
+            intent.putExtra("text_view_visibility",true)
+            intent.putExtra("quiz_number",3)
             startActivity(intent)
         }
+        binding.woow.setOnClickListener{
+            val intent = Intent(this,MainActivity2::class.java)
+            startActivity(intent)
+        }
+
 
     }
 

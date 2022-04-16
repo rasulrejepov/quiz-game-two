@@ -59,7 +59,7 @@
                android:layout_height="200dp"
                android:src="@drawable/crazy_math_game"/>
            <com.google.android.material.button.MaterialButton
-               android:layout_width="wrap_content"
+               android:layout_width="150dp"
                android:layout_height="wrap_content"
                android:layout_gravity="center"
                android:text="@string/math_games"
@@ -92,7 +92,7 @@
                 android:src="@drawable/crazy_flags_games"/>
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/myButtnIdNextActivity2"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/flags_game"
@@ -124,7 +124,7 @@
                 android:src="@drawable/crazy_county_games"/>
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/myButtnIdNextActivity3"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/country_game"

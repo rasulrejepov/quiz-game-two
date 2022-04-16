@@ -9,5 +9,6 @@
     <string name="answer_two">Answer two</string>
     <string name="answer_three">Answer three</string>
     <string name="answer_four">Answer four</string>
-    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="Continue_games">Continue</string>
 </resources>
