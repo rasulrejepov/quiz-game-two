@@ -11,4 +11,14 @@
     <string name="answer_four">Answer four</string>
     <string name="submit">Submit</string>
     <string name="Continue_games">Continue</string>
+    <string name="Finish">Finish</string>
+    <string name="true_answer">true answers:        %d/10</string>
+    <string name="false_answers">false answers:     %d/10</string>
+    <string name="number_question">number question:     %d</string>
+    <string name="you_win">You win</string>
+    <string name="You_lose">You lose</string>
+    <string name="You_result_is_good">Your result is good</string>
+    <string name="you_result_is_satisfactory">your result is satisfactory</string>
+    <string name="menu">menu</string>
+    <string name="try_again">Try again</string>
 </resources>
