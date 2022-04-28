@@ -199,6 +199,7 @@ class QuizTestMain : AppCompatActivity() {
                         binding.answerButtonThree.text = "$w"
                         trueAnswer = 3
                     }
+                    /*kjsndvnx,fmvnz,mxcgi*/
                     4 -> {
                         var q = true
                         var a: Int = 1
